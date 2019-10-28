@@ -1,0 +1,37 @@
+body {
+    margin: auto;
+    width: 80%;
+    border: #CACACA solid 20px;
+}
+
+
+.article {
+    padding: 20px;
+    
+}
+.date {
+    font-family: 'Staatliches', cursive;
+    color: gray;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.first{
+    padding-left: 10px;
+    border-left: gray solid 3px;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*
+
+font-family: 'Staatliches', cursive;
+font-family: 'Raleway', sans-serif;
+
+*/
