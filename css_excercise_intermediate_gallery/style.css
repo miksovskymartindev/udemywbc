@@ -1,0 +1,17 @@
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+
+}
+p {
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+    margin-left: 1.66%;
+
+}
+
+p::first-line {
+    border-bottom: solid #aaaaaa 5px;  
+}
+
