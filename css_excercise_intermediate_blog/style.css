@@ -5,10 +5,10 @@ body {
     border: #CACACA solid 20px;
 }
 
-
 .article {
     padding: 20px;   
 }
+
 .date {
     font-family: 'Staatliches', cursive;
     color: gray;
@@ -16,15 +16,16 @@ body {
     text-transform: uppercase;
 
 }
-.first{
+
+.first {
     padding-left: 10px;
     border-left: gray solid 3px;
 }
 
 h1 {
-    font-family: 'Staatliches', cursive;
-    
+    font-family: 'Staatliches', cursive; 
 }
+
 p {
     font-family: 'Raleway', sans-serif;
 }
