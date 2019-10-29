@@ -1,13 +1,13 @@
 body {
     margin: auto;
     width: 80%;
+    max-width: 700px;
     border: #CACACA solid 20px;
 }
 
 
 .article {
-    padding: 20px;
-    
+    padding: 20px;   
 }
 .date {
     font-family: 'Staatliches', cursive;
@@ -28,10 +28,3 @@ h1 {
 p {
     font-family: 'Raleway', sans-serif;
 }
-
-/*
-
-font-family: 'Staatliches', cursive;
-font-family: 'Raleway', sans-serif;
-
-*/
