@@ -1,0 +1,39 @@
+
+/*
+*/
+
+.electricbg {  
+    background-color: #3CC47C;
+}
+.forestbg {
+    background-color: #1E392A;
+}
+.darkforestbg {
+    background-color: rgb(11, 20, 15);
+}
+.lightbg {
+    background-color: #E9C893;
+}
+
+.tinbg {
+    background-color: #828081;
+}
+
+.electricc {  
+    color: #3CC47C;
+}
+.forestc {
+    color: #1E392A;
+}
+
+.darkforestc {
+    color: rgb(11, 20, 15);
+}
+
+.lightc {
+    color: #E9C893;
+}
+
+.tinc {
+    color: #828081;
+}
