@@ -5,6 +5,7 @@
 
 
 const emoticons = {
+
     pig : ":pig:",
     one_hundred : ":100:",
     bug : ":bug:",
@@ -15,9 +16,17 @@ const emoticons = {
     sun : ":sunny:"
 };
 
+const defaultPostData = { 
+    channel : "#general",
+    username : "dummy",
+    text : "dummy text",
+    icon_emoji : ":sun:"
+};
+
 class RequestHandler {
 
     constructor(data, endpoint, async, requestType="POST") {
+
         this._data = data;
         this._endpoint = endpoint;
         this._async = async;
@@ -25,16 +34,94 @@ class RequestHandler {
         this._request = new XMLHttpRequest();
     }
 
+    get data(){
+        return this._data;
+    }
 
+    set data(data) {
+        this._data = data;
+    }
+
+    get endpoint(){
+        return this._endpoint;
+    }
+
+    set endpoint(endpoint) {
+        this._endpoint = endpoint;
+    }
+
+    get async(){
+        return this._async;
+    }
+
+    set async(async) {
+        this._async = async;
+    }
+
+    get requestType(){
+        return this._requestType;
+    }
+
+    set requestType(requestType) {
+        this._requestType = requestType;
+    }
+
+    openConnection() {
+        this._request.open(this.requestType, this._endpoint, this._async);
+    }
+
+    isConnectionOpened(){
+        return this._request.readyState === 1;
+    }
+    sendRequest() {
+        if(!this.isConnectionOpened()) {
+            this.openConnection();
+        }
+
+        this._request.send(JSON.stringify(this.data()));
+    }
 }
 
 class SlackPostData {
 
     constructor(channel, username, text, icon_emoji=":sun:") {
+
         this.channel = channel;
         this.username = username;
         this.text = text;
         this.icon_emoji = icon_emoji;
+    }
+
+    get channel(){
+        return this._channel;
+    }
+
+    set channel(channel) {
+        this._channel = channel;
+    }
+
+    get username(){
+        return this._username;
+    }
+
+    set username(username) {
+        this._username = username;
+    }
+
+    get text(){
+        return this._text;
+    }
+
+    set text(text) {
+        this._text = text;
+    }
+
+    get icon_emoji(){
+        return this._icon_emoji;
+    }
+
+    set icon_emoji(icon_emoji) {
+        this._icon_emoji = icon_emoji;
     }
 }
 
@@ -52,12 +139,7 @@ function sendJSONRequest(data, endpoint, async) {
     request.send(JSON.stringify(data))
 }
 
-var postData = { 
-    channel : null,
-    username : null,
-    text : null,
-    icon_emoji : null
-};
+
 
 var slack = {
     channel : {
