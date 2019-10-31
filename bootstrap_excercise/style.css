@@ -1,39 +1,67 @@
 
 /*
 */
-
-.electricbg {  
-    background-color: #3CC47C;
-}
-.forestbg {
-    background-color: #1E392A;
-}
-.darkforestbg {
-    background-color: rgb(11, 20, 15);
-}
-.lightbg {
-    background-color: #E9C893;
+.consolas {
+    font-family: 'Ubuntu Mono', monospace;
 }
 
-.tinbg {
-    background-color: #828081;
+.ccolor-bg-main {
+    background-color: #212A38;
 }
-
-.electricc {  
-    color: #3CC47C;
+.ccolor-bg-shadows {
+    background-color: #1A222D;    
 }
-.forestc {
-    color: #1E392A;
+.ccolor-bg-lights {
+    background-color: #273344;
 }
-
-.darkforestc {
-    color: rgb(11, 20, 15);
+.ccolor-bg-highlights {
+    background-color: #2D3D4F;
 }
-
-.lightc {
-    color: #E9C893;
+.ccolor-bg-red {
+    background-color: #DB524B;
 }
-
-.tinc {
-    color: #828081;
+.ccolor-bg-green {
+    background-color: #27B79B;
+}
+.ccolor-bg-yellow {
+    background-color: #F9A832;
+}
+.ccolor-bg-blue {
+    background-color: #1787C6;
+}
+.ccolor-bg-violet {
+    background-color: #926ECC;
+}
+.ccolor-bg-gray {
+    background-color: #B9C4C6;
+}
+.ccolor-main {
+    color: #212A38;
+}
+.ccolor-shadows {
+    color: #1A222D;    
+}
+.ccolor-lights {
+    color: #273344;
+}
+.ccolor-highlights {
+    color: #2D3D4F;
+}
+.ccolor-red {
+    color: #DB524B;
+}
+.ccolor-green {
+    color: #27B79B;
+}
+.ccolor-yellow {
+    color: #F9A832;
+}
+.ccolor-blue {
+    color: #1787C6;
+}
+.ccolor-violet {
+    color: #926ECC;
+}
+.ccolor-gray {
+    color: #B9C4C6;
 }
